@@ -1,0 +1,144 @@
+/*substitute for actual site body*/
+body {
+  margin: 0;
+  background-color: #ffffff;
+  }
+  
+/*main quiz containers*/
+.grey-container {
+  background-color: #f4f4f4; 
+  padding: 20px; 
+  display: flex; 
+  flex-direction: column; /* Stack vertically */
+  align-items: center; /* Center children horizontally */
+  max-width: 800px;
+  margin-left: auto; /* Center quiz container */
+  margin-right: auto; 
+}
+.quiz-container {
+  display: flex;
+  width: 800px;
+  background-color: #fff;
+}
+.quiz-main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/*sidebar*/
+.question-sidebar {
+  background-color: #f4f4f4;
+  width: 150px;
+  text-align: center;
+  padding-right: 20px;
+  height: 450px; 
+  overflow-y: auto;  
+}
+.question-link {
+  padding: 10px;
+  margin: 5px 0; 
+  background-color: #d9534f;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.question-link:hover, .question-link.active {
+  background-color: #b52b27; 
+}
+
+/*quiz question/answer*/
+.quiz-content {
+    flex-grow: 1;
+  }
+.question-number {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
+  margin:20px;
+}
+.answer-option {
+  margin:20px;
+  cursor: pointer;
+}
+.answer-option label {
+  cursor: pointer;
+}
+.answer-option input[type="radio"] {
+  display: none;
+
+}
+.answer-option input[type="radio"] + label:before {
+  content: "";
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  margin-right: 10px;
+  border-radius: 50%;
+  border: 2px solid black;
+  vertical-align: middle;
+}
+.answer-option input[type="radio"]:checked + label:before {
+  background: black;
+}
+
+
+/*quiz navigation buttons*/
+.quiz-navigation {
+  display: flex; 
+  margin-top: 20px; 
+  background-color: #f4f4f4; 
+  }
+  .nav-button:first-child {
+  margin-right: 10px; 
+  }
+  .nav-button:last-child {
+  margin-left: auto; 
+  background-color: #d9534f;
+  color: white;
+  }
+  .nav-button:last-child:hover {
+  background-color: #b52b27;
+  }
+.nav-button {
+  background-color: #ffffff;
+  font-size: 1rem;
+  color: black;
+  margin-top: 5px;
+  padding: 5px 32px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border: none;
+  outline: none;
+}
+.nav-button:hover {
+  opacity: 0.85;
+  background-color: black;
+  color: white;
+}
+
+#popup-content{
+  text-align: center;
+  margin:1%;
+  font-size: 1.25em;
+  color: #b52b27;
+  /*display: none;*/
+}
+
+#popup{
+  background-color: #f4f4f4;
+  padding: 10px;
+  margin-top: 1.5%;
+  margin-bottom: 1.5%;
+  margin-left: 30%;
+  margin-right: 30%;
+  display: none;
+}
+
+#correct_answer{
+  display: none;
+  color: green;
+  font-size: 1.125em;
+  margin-top: 10%;
+  margin-left: 10%;
+}

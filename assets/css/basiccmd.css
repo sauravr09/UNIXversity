@@ -1,0 +1,28 @@
+body{
+    margin-bottom: 5vw;
+}
+
+.content{
+    margin: 5vw 10vw 0vw 15vw;
+    color: #838383;
+}
+
+h2{
+    font-size: 30px;
+    color: #000000;
+
+    margin-top: 3vw;
+    margin-bottom: 2vw;
+}
+
+p{
+    font-size: 23px;
+}
+
+a {
+    color: #EF2A2A;
+}
+
+a:hover{
+    color:#9c2e2e;
+}
